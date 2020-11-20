@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>SaleManagement</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20200702093945_Add_Models.cs" />
+    <Compile Remove="Migrations\20200702093945_Add_Models.Designer.cs" />
+    <Compile Remove="Migrations\20200702100943_Add_Models.cs" />
+    <Compile Remove="Migrations\20200702100943_Add_Models.Designer.cs" />
+    <Compile Remove="Migrations\20200702101807_Add_Models.cs" />
+    <Compile Remove="Migrations\20200702101807_Add_Models.Designer.cs" />
+    <Compile Remove="Migrations\20200703074742_Ignore_ExtraProperties.cs" />
+    <Compile Remove="Migrations\20200703074742_Ignore_ExtraProperties.Designer.cs" />
+    <Compile Remove="Migrations\20200703075015_Ignore_ExtraProperties.cs" />
+    <Compile Remove="Migrations\20200703075015_Ignore_ExtraProperties.Designer.cs" />
+    <Compile Remove="Migrations\20200703075637_Ignore_ExtraProperties.cs" />
+    <Compile Remove="Migrations\20200703075637_Ignore_ExtraProperties.Designer.cs" />
+    <Compile Remove="Migrations\20200703075919_Ignore_ExtraProperties.cs" />
+    <Compile Remove="Migrations\20200703075919_Ignore_ExtraProperties.Designer.cs" />
+    <Compile Remove="Migrations\20200703080512_Ignore_ExtraProperties.cs" />
+    <Compile Remove="Migrations\20200703080512_Ignore_ExtraProperties.Designer.cs" />
+    <Compile Remove="Migrations\20200703091148_SeedData.cs" />
+    <Compile Remove="Migrations\20200703091148_SeedData.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SaleManagement.EntityFrameworkCore\SaleManagement.EntityFrameworkCore.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.4" />
+  </ItemGroup>
+
+</Project>

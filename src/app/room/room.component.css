@@ -1,0 +1,41 @@
+#room {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#room td,
+#room th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#room tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#room tr:hover {
+    background-color: #ddd;
+}
+
+#room th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4d9c8b;
+    color: white;
+}
+
+button {
+    background-color: #eee;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    cursor: hand;
+    font-family: Arial;
+}
+
+button:hover {
+    background-color: #cfd8dc;
+}

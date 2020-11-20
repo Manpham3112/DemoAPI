@@ -1,0 +1,35 @@
+<table id="room">
+    <thead>
+        <tr>
+            <th scope="col" width="200">Name</th>
+            <th scope="col" width="120" class="text-center">Price</th>
+            <th scope="col" width="200" class="text-center">Status</th>
+            <th scope="col" width="200" class="text-center"></th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let room of room">
+            <td>
+                <figcaption>
+                    <h5> {{ room.name }} </h5>
+                </figcaption>
+            </td>
+            <td>
+                <div>
+                    <var class="price">{{room.price.toLocaleString('en-US',
+                        {style: 'currency', currency: 'USD'})}}</var>
+                </div>
+            </td>
+            <td>
+                <h5> {{ room.status }} </h5>
+            </td>
+            <td>
+                <button (click)="gotoItems(room.id)">Edit</button>
+                <button class="delete" (click)="deleteRoom(room)">Delete</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+<br/>
+<button (click)="createRoom()">Create New Room </button>

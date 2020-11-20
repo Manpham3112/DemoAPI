@@ -1,0 +1,19 @@
+<div>
+    <h2>{{roomDetail?.name | uppercase}} Details</h2>
+    <div><span>id: </span>{{roomDetail?.id}}</div>
+    <div>
+        <label>Name:
+            <input [(ngModel)]="roomDetail.name" placeholder="name"/>
+        </label>
+        <p> </p>
+        <label>Price:
+            <input [(ngModel)]="roomDetail.price" placeholder="price"/>
+        </label>
+        <p> </p>
+        <label>Status:
+            <input [(ngModel)]="roomDetail.status" placeholder="status"/>
+        </label>
+    </div>
+
+    <button (click)="save()">save</button>
+</div>
